@@ -18,7 +18,19 @@ const printHelp = () => {
       -t [API_KEY] for save token
     `
   );
-}
+};
 
-export { printError, printSuccess, printHelp };
+const printWeather = (res, icon) => {
+  console.log(
+    dedent` ${chalk.bgMagenta(' WEATHER ')} Weather in the city ${res.name}
+    ${icon}  ${res.weather[0].description}
+    Temperature: ${res.main.temp} °C (feels like: ${res.main.feels_like} °C)
+    Pressure: ${res.main.pressure} mmHg 
+    Humidity: ${res.main.humidity} %
+    Wind speed: ${res.wind.speed} m per sec
+  `
+);
+};
+
+export { printError, printSuccess, printHelp, printWeather };
 
