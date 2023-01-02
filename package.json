@@ -1,0 +1,27 @@
+{
+  "name": "weather_cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin": "./index.js",
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Tory Korvin",
+  "license": "ISC",
+  "homepage": "https://google.com",
+  "repository": {
+    "type": "git",
+    "url": "https://google.com"
+  },
+  "bugs": {
+    "url": "https://google.com",
+    "email": "korovin.vic@gmail.com"
+  }
+  
+}
